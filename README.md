@@ -5,5 +5,5 @@ Simple extension of the existing openshift jenkins slave to add the latest versi
 # To Build
 
 ```
-oc new-build openshift3/jenkins-slave-maven-rhel7~https://github.com/welshstew/jenkins-slave-maven339.git
+oc new-build registry.access.redhat.com/openshift3/jenkins-slave-maven-rhel7:latest~https://github.com/welshstew/jenkins-slave-maven339.git --strategy=docker
 ```
